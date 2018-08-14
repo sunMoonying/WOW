@@ -1,0 +1,24 @@
+aside{
+	height: 40px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	.ul_aside{
+		display: flex;
+		height: 40px;
+		line-height: 40px;
+		li{
+			flex:1;
+			text-align: center;
+			a{
+				text-decoration: none;
+				color: #000;
+				display: block;
+			}
+		}
+	}
+}
+.active{
+	background: red
+}
