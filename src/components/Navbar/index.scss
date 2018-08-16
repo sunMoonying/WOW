@@ -1,11 +1,12 @@
 nav{
 	height: 40px;
-	position: fixed;
-	left: 0;
-	top: 0;
+	// position: fixed;
+	// left: 0;
+	// top: 0;
 	width: 100%;
 	display: flex;
 	line-height: 40px;
+	background:#f00;
 
 	.icon-viewlist{
 		flex: 1;
