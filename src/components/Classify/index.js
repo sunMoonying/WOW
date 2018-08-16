@@ -61,5 +61,10 @@ class Classify extends Component{
 	searchClick(){
 		this.props.history.push("/search")
 	}
+	bandclick(data){
+		// console.log(this.props)
+		this.props.history.push(`/list/${data}`)
+
+	}
 }
 export default Classify

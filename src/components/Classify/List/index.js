@@ -46,7 +46,7 @@ class List extends Component{
 
 			{
 			<div className="classify_list_content" key={this.state.content.length}>
-				<ul>
+				<ul className="list_content_ul">
 					{
 						this.state.content.map(item=>
 							<li className="list_content_product" key={item.productId} onClick={this.jumpClick.bind(this,item.productId)}>
