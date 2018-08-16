@@ -44,7 +44,7 @@ class Furniture extends Component{
 							<p className="title_p1">{item.moduleDescription}</p>
 							{
 								item.moduleContent.banners?
-									<img src={item.moduleContent.banners[0].bannerImgSrc} className = "title_li1_img"/>
+									<img src={item.moduleContent.banners[0].bannerImgSrc} className = "title_li1_img" onClick = {this.callback.bind(this,item.moduleContent.banners[0].bannerLinkTargetId)}/>
 									:null
 							}
 							{
@@ -116,10 +116,9 @@ class Furniture extends Component{
 		console.log(111111);
 		this.props.history.push(`/detail/${data}`)
 	}
-	// bigimageclick(data){
-	// 	this.props.history.push(`/brand/${data}`)
-	// }
-
+	callback(data){
+		this.props.history.push(`/brand/${data}`)
+	}
 	componentDidMount(){
  	axios.get("/v2/page?pageId=1&tabId=10005&_=1534240589230").then(res=>{
 			console.log(res.data)

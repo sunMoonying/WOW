@@ -2,7 +2,8 @@
   width: 100%; }
   #brand .img_url {
     margin-bottom: 10px;
-    height: 250px; }
+    height: 250px;
+    width: 100%; }
   #brand .brand_ul {
     width: 100%;
     height: auto;
@@ -29,4 +30,4 @@
         margin-left: 10px;
         font-size: 14px;
         width: 100%;
-        line-height: 30px; }
+        line-height: 10px; }

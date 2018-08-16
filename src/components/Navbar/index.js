@@ -1,10 +1,11 @@
 import React,{Component} from 'react';
 import './index.css'
+import {connect} from 'react-redux'
 class Navbar extends Component{
 	render(){
 		return <nav>
 			<i className = "iconfont icon-viewlist" onClick = {this.bandclick.bind(this)}></i>
-			<span>桌几</span>
+			<span>{this.props.title}</span>
 			<i className = "iconfont icon-viewgallery" onClick = {this.bandclick1.bind(this)}></i>
 		</nav>
 	}
@@ -15,4 +16,11 @@ class Navbar extends Component{
 		this.props.mycallback1()
 	}
 }
-export default Navbar
+export default connect(
+	state =>{
+		return{
+			title : state.reducer
+		}
+	},
+	null
+)(Navbar)
