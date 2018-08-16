@@ -26,8 +26,8 @@ const router = (
 	<Router>
 		<App>
 			<Switch>
-				<Route path = "/home" render = {()=>
-					<Home>
+				<Route path = "/home" render = {({history})=>
+					<Home history={history}>
 						<Switch>
 							<Route path = '/home/recommend' component = {Recommend} />
 							<Route path = '/home/furniture' component = {Furniture} />

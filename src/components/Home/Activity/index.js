@@ -37,7 +37,7 @@ class Activity extends Component{
 						</li>:
 						(
 							index !== 5?
-							<li>
+							<li className = "ll">
 							{							
 								item.moduleContent.products && item.moduleContent.products.map(item=>
 									
@@ -51,7 +51,7 @@ class Activity extends Component{
 							}
 							</li>
 							:
-							<li>
+							<li className = "ll">
 							<h3 className="people">人气单品</h3>
 							{	
 

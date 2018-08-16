@@ -1,0 +1,33 @@
+#productGroup {
+  width: 100%;
+  /* background: #fff; */ }
+  #productGroup .img_url {
+    margin-bottom: 10px;
+    height: 250px; }
+  #productGroup .productGroup_ul {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: #fff; }
+    #productGroup .productGroup_ul .productGroup_li {
+      width: 50%;
+      float: left;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      height: 270px; }
+      #productGroup .productGroup_ul .productGroup_li img {
+        width: 100%; }
+      #productGroup .productGroup_ul .productGroup_li .productGroup_p {
+        margin-left: 10px;
+        font-size: 13px;
+        color: #808080;
+        line-height: 30px;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+      #productGroup .productGroup_ul .productGroup_li .productGroup_h4 {
+        margin-left: 10px;
+        font-size: 14px;
+        width: 100%;
+        line-height: 30px; }

@@ -1,0 +1,32 @@
+#brand {
+  width: 100%; }
+  #brand .img_url {
+    margin-bottom: 10px;
+    height: 250px; }
+  #brand .brand_ul {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: #fff; }
+    #brand .brand_ul .brand_li {
+      width: 50%;
+      float: left;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      height: 270px; }
+      #brand .brand_ul .brand_li .brand_li_img {
+        width: 100%; }
+      #brand .brand_ul .brand_li .brand_p {
+        margin-left: 10px;
+        font-size: 13px;
+        color: #808080;
+        line-height: 30px;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+      #brand .brand_ul .brand_li .brand_h4 {
+        margin-left: 10px;
+        font-size: 14px;
+        width: 100%;
+        line-height: 30px; }

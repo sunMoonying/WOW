@@ -1,9 +1,13 @@
+.box1 {
+  background: #fff; }
+
 .box1 img {
   width: 100%; }
 
 .picture3 {
   width: 33.33%;
-  float: left; }
+  float: left;
+  background: #fff; }
 
 .picture3 img {
   widt: 100%; }
@@ -15,11 +19,13 @@
   white-space: nowrap;
   font-size: 12px;
   padding: 0 10%;
-  color: #333; }
+  color: #ccc;
+  line-height: 20px; }
 
 .picture6 {
   width: 50%;
-  float: left; }
+  float: left;
+  background: #fff; }
 
 .picture6 img {
   width: 100%; }
@@ -30,7 +36,8 @@
   white-space: nowrap;
   font-size: 12px;
   padding: 0 10%;
-  color: #333; }
+  color: #ccc;
+  line-height: 20px; }
 
 .money {
   color: #000; }
@@ -42,4 +49,10 @@
   line-height: 62px;
   float: left;
   color: #333;
-  font-size: 18px; }
+  font-size: 16px;
+  border-bottom: 3px solid #bbb;
+  background: #fff;
+  margin-bottom: 0; }
+
+.ll {
+  height: 100%; }

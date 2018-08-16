@@ -4,6 +4,8 @@
 	position: fixed;
 	left: 0;
 	top: 40px;
+	background: #fff;
+	z-index: 100;
 	.ul_aside1{
 		height: 40px;
 		line-height: 40px;
@@ -11,6 +13,12 @@
 		li{
 			flex: 1;
 			text-align: center;
+			a{
+				color: #808080!important;
+			}
+			a:hover{
+				color: #808080!important;
+			}
 		}
 	}
 }
