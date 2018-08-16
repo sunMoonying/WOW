@@ -1,0 +1,45 @@
+.box1 img {
+  width: 100%; }
+
+.picture3 {
+  width: 33.33%;
+  float: left; }
+
+.picture3 img {
+  widt: 100%; }
+
+.p1 {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+  padding: 0 10%;
+  color: #333; }
+
+.picture6 {
+  width: 50%;
+  float: left; }
+
+.picture6 img {
+  width: 100%; }
+
+.p2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+  padding: 0 10%;
+  color: #333; }
+
+.money {
+  color: #000; }
+
+.people {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 62px;
+  float: left;
+  color: #333;
+  font-size: 18px; }
