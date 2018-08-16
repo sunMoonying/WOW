@@ -22,6 +22,7 @@ class Classify extends Component{
 		</div>
 	}
 	bandclick(data){
+		// console.log(this.props)
 		this.props.history.push(`/list/${data}`)
 	}
 }
