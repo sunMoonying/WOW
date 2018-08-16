@@ -4,6 +4,7 @@ aside {
   left: 0;
   bottom: 0;
   width: 100%;
+  background: #fff;
   z-index: 100; }
   aside .ul_aside {
     display: flex;

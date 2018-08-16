@@ -1,7 +1,19 @@
 #furniture{
 	height:100%;
 	width:100%;
+	background:#fff;
+}
 
+.swiper-wrapper .title_img1{
+   	width: 120px;
+   	height: 120px;
+}
+.swiper-slide {
+   text-align: left;
+   background: #fff;
+   width: 34%;
+   font-size:14px;
+}
 .fur_banner{
 	width:100%;
 }
@@ -12,50 +24,114 @@
 .title_ul .title_li1{
 		width:100%;
 	}
-.title_ul .title_li1 .title_h3{
+.title_ul .title_li1 .title_h1{
 		width:100%;
-		height:50px;
+		height:70px;
+		line-height:70px;
+		background:#fff;
+		font-size:20px;
 		
 	}
-	// .title_ul .title_li1 .title_p{
-	// 	width:100%;
-	// 	height:50px;
-	// 	line-height:50px;
-	// }
+.title_ul .title_li1 .title_p1{
+	
+			color:#aaa;
+			background:#fff;
+	}
 			
 .title_ul .title_li1 .title_img1{
-			width:100%;
-			height:50%;
+			width:80%;
+			
 		}
+.title_ul .title_li1 .title_div1_p1{
+		font-size:14px;
+		width:100px;
+		padding-left:10px;
+		color:#aaa;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+
+
+}	
+.title_ul .title_li1 .title_div1_p11{
+		font-size:14px;
+	
+		padding-left:10px;
+		
+
+}	
 
 
 .title_ul .title_li2{
 		width:100%;
+		background:#fff;
 	}
+.title_ul .title_li2 .title_h2{
+		width:100%;
+		height:70px;
+		line-height:70px;
+		background:#fff;
+		font-size:20px;
+		
+	}
+
 .title_ul .title_li2	.title_img2{
 			width:31%;
 			height:50%;
 		}
 
 .title_ul .title_li3{
-	height:900px;
+	height:1000px;
 	overflow:hidden;
 }
-.title_ul .title_li3 .title_img3{
-			width:49%;
-			height:30%;
-			border-top:1px solid #ddd; 
-			border-bottom:1px solid #ddd; 
-			border-left:1px solid #ddd; 
 
+.title_ul .title_li3 .title_h3{
+		width:100%;
+		height:70px;
+		line-height:70px;
+		background:#fff;
+		font-size:20px;
+		
+	}
+.title_ul .title_li3 .title_p3{
+	
+			color:#aaa;
+			background:#fff;
+			padding-bottom:10px;
+	}
+.title_ul .title_li3 .title_div3{
+			width:49.5%;
+			height:29.7%;
+			border:1px solid #ddd; 
+			// border-bottom:1px solid #ddd; 
+			// border-left:1px solid #ddd;
+			 float:left;
+			 background:#fff;
+			}
+
+.title_ul .title_li3 .title_div3 .title_img3{
+			width:100%;
+			height:65%;
 		}
+
+.title_ul .title_li3 .title_div3 .title_div3_p3{
+	text-align:left;
+	padding-left:10px;
+	color:#aaa;
+}
+.title_ul .title_li3 .title_div3 .title_div3_p33{
+	text-align:left;
+	padding-left:10px;
+	font-size:18px;
+
+}
 .title_topback{
 	width:50px;
 	height:50px;
 	position:fixed;
 	z-index:100;
-	right:0px;
-	bottom:0px;
+	right:10px;
+	bottom:45px;
 	display:block;
 }
-}
+
