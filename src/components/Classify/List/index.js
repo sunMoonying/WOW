@@ -3,7 +3,7 @@ import Navbar from '../../Navbar';
 import axios from "axios";
 import "./index.css";
 
-// import store from "../../../Redux"
+
 
 class List extends Component{
 	constructor(props){
@@ -11,7 +11,9 @@ class List extends Component{
 		this.state={
 			datalist:null,
 			content:[],
-			change:""
+			change:"",
+			navList:[{title:'上新',style:'onShelfTime',key:'1'},{title:'销量',style:'sales',key:'2'},{title:'价格',style:'price',key:'3'}],
+			focus:'1'
 		}
 	}
 	render(){
@@ -32,16 +34,15 @@ class List extends Component{
 
 			<div className="classify_list_title">
 
-				<ul className='list_title_ul '  >
-					<li className="list_title" onClick={this.ChangeClick.bind(this,'onShelfTime')}>
-						上新
-					</li>
-					<li className="list_title" onClick={this.ChangeClick.bind(this,"sales")}>
-						销量
-					</li>
-					<li className="list_title" onClick={this.ChangeClick.bind(this,"price")}>
-						价格
-					</li>
+				
+				<ul className='list_title_ul'  >
+					{
+						this.state.navList.map(item=>
+							<li className={(item.key == this.state.focus ? 'list_title title_active':'list_title') } key={item.key} onClick={this.ChangeClick.bind(this,item.style,item.key)}>
+								{item.title}
+						 	</li>
+						)
+					}
 				</ul>
 
 			</div>
@@ -65,12 +66,14 @@ class List extends Component{
 
 		</div>
 	}
-	ChangeClick(data){
+	ChangeClick(data,key){
+		console.log('xxx',key)
 		axios.get(`/pages/category/${this.props.match.params.id}?pageNumber=1&orderBy=${data}&sort=desc&_=1534298420792`).then(res=>{
 			// console.log(res.data)
 			console.log(res.data.data.products)
 			this.setState({
-				content:res.data.data.products
+				content:res.data.data.products,
+				focus:key
 			})
 			//console.log(this);
 

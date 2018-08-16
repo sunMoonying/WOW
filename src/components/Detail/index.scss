@@ -1,3 +1,66 @@
 #detail{
 	background:#fff;
+	margin-bottom:100px;
+}
+.juti_li{
+	list-style:none
+}
+.juti_img{
+	width:100%;
+}
+.message-title{
+	width:100%;
+	height:48px;
+	font-size:16px;
+	color:#000;
+	box-sizing:border-box;
+	    display: flex;
+    justify-content: center;
+	.message-span{
+		float:left;
+		line-height: 48px;
+	}
+	.message-div{
+		float:left;
+		text-align: center;
+	}
+}
+.canshu_p{
+	font-size:16px;
+	color:#000;
+}
+.canshu_li{
+	height:35px;
+	line-height:35px;
+	border-top:1px solid #eaeaea;
+	font-size:14px;
+	display:flex;
+	width:100%;
+	.li_span1{
+		width:30%;
+	}
+	.li_span2{
+		width:70%;
+	}
+}
+.like_product{
+	width:100%;
+
+	.like_product_li{
+		height:302px;
+		width:49.7%;
+		float:left;
+		border-right: 1px solid #f5f5f5;
+		border-bottom: 1px solid #f5f5f5;
+		background:#fff;
+		.like_product_p1{
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			width: 100%;
+		}
+		.like_product_price{
+			color:#000;
+		}
+	}
 }

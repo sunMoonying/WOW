@@ -1,0 +1,66 @@
+.l_my {
+  float: left; }
+
+.r_my {
+  float: right; }
+
+.head_my {
+  background: #fff;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #f5f5f5;
+  width: 100%;
+  color: #000;
+  margin-bottom: 10px; }
+
+.username_my {
+  width: 100%;
+  background: #fff;
+  text-align: left;
+  height: 100px;
+  line-height: 100px;
+  margin-bottom: 10px; }
+
+.username_my .class1_my {
+  margin-left: 15px; }
+
+.operate_my {
+  margin-bottom: 10px; }
+
+.operate_my .li1_my {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  /* /font-size: 14px; */
+  background: #fff;
+  text-align: left;
+  border-bottom: 1px solid #EAEAEA;
+  background: #fff; }
+
+.operate_my .li1_my .l_my {
+  margin-right: 10px; }
+
+.myself_my {
+  margin-bottom: 10px; }
+
+.myself_my .li2_my {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  /*     font-size: 14px; */
+  color: #000;
+  border-bottom: 1px solid #EAEAEA;
+  background: #fff; }
+
+.myself_my .li2_my .span1_my {
+  display: block; }
+
+.quit_my {
+  color: red;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  /* /font-size: 14px; */
+  background: #fff;
+  text-align: center; }

@@ -14,7 +14,7 @@
       border: 1px solid #ccc;
       box-sizing: border-box;
       height: 270px; }
-      #brand .brand_ul .brand_li img {
+      #brand .brand_ul .brand_li .brand_li_img {
         width: 100%; }
       #brand .brand_ul .brand_li .brand_p {
         margin-left: 10px;
