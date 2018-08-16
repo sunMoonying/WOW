@@ -3,6 +3,7 @@ nav {
   width: 100%;
   display: flex;
   line-height: 40px;
+  border-bottom: 1px solid #ccc;
   background: #fff; }
   nav .icon-viewlist {
     flex: 1;
