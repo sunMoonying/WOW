@@ -75,7 +75,7 @@ class Furniture extends Component{
 							{
 								item.moduleContent.products && item.moduleContent.products.map(item=>
 								<div className="title_div3">	
-									<img src={item.productImg} className="title_img3"/>	
+									<img src={item.productImg} className="title_img3" onClick={this.buttonClick.bind(this,item.productId)}/>	
 									<p className="title_div3_p3">{item.productName}</p>
 									<p className="title_div3_p33">￥{item.sellPrice}</p>
 								</div>
@@ -133,15 +133,13 @@ class Furniture extends Component{
 					spaceBetween: 15,
 					pagination: {
 					    el: '.swiper-pagination',
-					    clickable: true,
-					},
+					    clickable: true
+					}
 				});
 			})
-		}).catch(error=>{
+		}).catch(error=>{})
 
-		})
-
-}
+	}
 
 }
 
