@@ -1,0 +1,33 @@
+#topic {
+  width: 100%;
+  /* background: #fff; */ }
+  #topic .img_url {
+    margin-bottom: 10px;
+    height: 250px; }
+  #topic .topic_ul {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: #fff; }
+    #topic .topic_ul .topic_li {
+      width: 50%;
+      float: left;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      height: 270px; }
+      #topic .topic_ul .topic_li img {
+        width: 100%; }
+      #topic .topic_ul .topic_li .topic_p {
+        margin-left: 10px;
+        font-size: 13px;
+        color: #808080;
+        line-height: 30px;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+      #topic .topic_ul .topic_li .topic_h4 {
+        margin-left: 10px;
+        font-size: 14px;
+        width: 100%;
+        line-height: 30px; }
