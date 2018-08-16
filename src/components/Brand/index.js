@@ -16,8 +16,8 @@ class Brand extends Component{
 				{	
 					this.state.datalist.map(item=>
 						<li className = "brand_li">
-							<img src={item.productImg} />
-							<p    className = "brand_p">{item.productTitle}</p>
+							<img src={item.productImg} className="brand_li_img"/>
+							<p className = "brand_p">{item.productTitle}</p>
 							<h4 className = "brand_h4">￥{item.sellPrice}</h4>
 						</li>
 					)

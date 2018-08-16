@@ -1,7 +1,7 @@
 nav {
   height: 40px;
   width: 100%;
-  display: flex!important;
+  display: flex;
   line-height: 40px;
   border-bottom: 1px solid #ccc;
   background: #fff; }

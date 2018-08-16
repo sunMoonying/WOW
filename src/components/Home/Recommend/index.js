@@ -22,7 +22,7 @@ class Recommend extends Component{
 			<ReactSwipe className="carousel" swipeOptions={{continuous: true,auto:2000}} key = {this.state.swipeList.length}>
 		       {
 		       	this.state.swipeList.map(item=>
-		       		<img src={item.bannerImgSrc} key = {item.id}/>
+		       		<img src={item.bannerImgSrc} key = {item.id} className="recoment_img"/>
 		       	)
 		       }        
 		    </ReactSwipe>
@@ -36,7 +36,7 @@ class Recommend extends Component{
 							<p className = "recommend_p">{item.moduleDescription}</p>
 							{
 								item.moduleContent.banners?
-									<img src={item.moduleContent.banners[0].bannerImgSrc} onClick = {this.bandclick.bind(this,item.moduleType,item.moduleContent.banners,item.moduleDescription)}/>
+									<img src={item.moduleContent.banners[0].bannerImgSrc} className="recoment_img" onClick = {this.bandclick.bind(this,item.moduleType,item.moduleContent.banners,item.moduleDescription)}/>
 									:null
 							}
 							<div className="swiper-container">
@@ -44,7 +44,7 @@ class Recommend extends Component{
 							{
 								item.moduleContent.products && item.moduleContent.products.map(item=>	
 									<div className="swiper-slide" key = {item.productId}>
-										<img src={item.productImg} />	
+										<img src={item.productImg}  className="recoment_img"/>	
 										<p className = "p_recommend">{item.productTitle}</p>
 										<h4 className = "h4_recommend">￥{item.sellPrice}</h4>
 									</div>
