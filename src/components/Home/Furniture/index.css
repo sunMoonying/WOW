@@ -1,0 +1,43 @@
+#furniture {
+  height: 100%;
+  width: 100%; }
+
+.fur_banner {
+  width: 100%; }
+
+.title_ul {
+  width: 100%;
+  text-align: center; }
+
+.title_ul .title_li1 {
+  width: 100%; }
+
+.title_ul .title_li1 .title_img1 {
+  width: 100%;
+  height: 50%; }
+
+.title_ul .title_li2 {
+  width: 100%; }
+
+.title_ul .title_li2 .title_img2 {
+  width: 30%;
+  height: 50%; }
+
+.title_ul .title_li3 {
+  height: 900px;
+  overflow: hidden; }
+
+.title_ul .title_li3 .title_img3 {
+  width: 49%;
+  height: 30%;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd; }
+
+.title_ul .title_li3 .title_li4 {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  z-index: 100;
+  right: 0;
+  bottom: -50px; }

@@ -3,12 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
+    "node-sass": "^4.9.3",
     "node-sass-chokidar": "^1.3.3",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "react-swipe": "^5.1.1",
+    "sass-loader": "^7.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -17,5 +21,12 @@
     "eject": "react-scripts eject",
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive"
+  },
+  "proxy": {
+    "/v2": {
+      "target": "https://m.wowdsgn.com",
+      "host": "m.wowdsgn.com",
+      "changeOrigin": true
+    }
   }
 }
