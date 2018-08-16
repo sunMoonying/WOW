@@ -3,6 +3,8 @@ import Navbar from '../../Navbar';
 import axios from "axios";
 import "./index.css";
 
+// import store from "../../../Redux"
+
 class List extends Component{
 	constructor(props){
 		super(props);
@@ -91,9 +93,14 @@ class List extends Component{
 			this.setState({
 				content:res.data.data.products
 			})
+
+			// store.dispatch({
+			// 	type:"changeListtitle",
+			// 	payload:"res.data.data."
+			// })
 		}).catch(error=>{
 			console.log(error)
-		}
+			}
 		)
 	}
 }

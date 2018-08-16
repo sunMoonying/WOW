@@ -76,4 +76,5 @@
       margin-left: 0.3rem; }
 
 .list_content_ul, .list_title_ul {
-  background: #fff; }
+  background: #fff;
+  width: 100%; }
