@@ -5,7 +5,8 @@ nav {
   top: 0;
   width: 100%;
   display: flex;
-  line-height: 40px; }
+  line-height: 40px;
+  border-bottom: 1px solid #ccc; }
   nav .icon-viewlist {
     flex: 1;
     padding-left: 10px; }

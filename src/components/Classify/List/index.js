@@ -10,6 +10,8 @@ class List extends Component{
 				console.log(22)
 				this.props.history.push('/classify');
 			}}></Navbar>
+
+			
 		</nav>
 	}
 }
