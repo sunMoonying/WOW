@@ -1,0 +1,79 @@
+#hahaha{
+	float: left;
+	border: 1px solid #ccc;
+	width: 49.3%;
+	height:300px;
+	background-color: white;
+	border-bottom: none;
+}
+.ha_img{
+	width: 50%;
+	margin-left:50px;
+}
+.ha_h3{
+	font-size: 18px;
+	color: grey;
+	font-weight: 200;
+	margin-left: 10px;
+}
+.ha_span{
+	font-size:18px;
+	font-weight: 300;
+	margin-left: 15px;
+}
+#ha{
+	width: 100%;
+	margin: 0 auto;
+	background-color: white;
+	box-sizing: border-box;
+}
+
+.ha_h4{
+	font-weight: 300;
+	color: grey;
+	font-size: 18px;
+	margin-left: 10px;
+}
+.tuijian{
+	height: 100px;
+	width: 100%;
+	line-height: 100px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 30px;
+	background-color: white;
+
+}
+#kong{
+	margin: 0px auto;
+	height: 150px;
+	width: 100%;
+}
+#kong #zi{
+	text-align: center;
+	font-size: 25px;
+	font-weight: 300;
+	line-height: 70px;
+}
+
+#er{
+	width:100%;
+}
+
+#er .er_li{
+	float: left;
+	height: 50px;
+	width: 30%;
+	background-color: orange;
+	text-align: center;
+	line-height: 50px;
+}
+
+#er #shoucang{
+	left: 15%;
+	position: absolute;
+}
+#er #kankan{
+	right: 15%;
+	position: absolute;
+}

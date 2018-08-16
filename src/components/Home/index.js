@@ -23,7 +23,7 @@ class Home extends Component{
 	bandclick(){
 		console.log(11)
 		console.log(this.props)
-		this.props.history.push('/home')
+		this.props.history.push('/search')
 	}
 }
 export default Home
