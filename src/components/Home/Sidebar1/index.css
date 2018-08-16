@@ -13,6 +13,10 @@
     .sidebar1 .ul_aside1 li {
       flex: 1;
       text-align: center; }
+      .sidebar1 .ul_aside1 li a {
+        color: #808080 !important; }
+      .sidebar1 .ul_aside1 li a:hover {
+        color: #808080 !important; }
 
 .active1 {
   border-bottom: 3px solid #000; }

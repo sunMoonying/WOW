@@ -1,5 +1,5 @@
 aside {
-  height: 40px;
+  height: 50px;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -8,8 +8,7 @@ aside {
   z-index: 100; }
   aside .ul_aside {
     display: flex;
-    height: 40px;
-    line-height: 40px; }
+    height: 50px; }
     aside .ul_aside li {
       flex: 1;
       text-align: center; }
@@ -19,4 +18,13 @@ aside {
         display: block; }
 
 .active {
-  background: red; }
+  color: #f5fbd3;
+  background: #f5f5f5; }
+
+.sidebar_i {
+  display: block;
+  line-height: 25px;
+  padding-top: 5px; }
+
+.sidebar_span {
+  line-height: 20px; }

@@ -28,7 +28,7 @@ class Topic extends Component{
 	componentDidMount(){
 		console.log(this.props.match.params.id2)
 		axios.get(`/topic/${this.props.match.params.id2}/products?_=1534301816930`).then(res=>{
-			console.log(res.data)
+			// console.log(res.data)
 			this.setState({
 				datalist : res.data.lists,
 				url : res.data.lists[9].productImg

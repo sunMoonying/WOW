@@ -2,7 +2,8 @@ import React,{Component} from 'react';
 import axios from 'axios'
 import './index.css'
 import ReactSwipe from 'react-swipe';
-
+import {ActivityIndicator} from "antd-mobile";
+import { Spin, Alert } from 'antd';
 
 let Swiper = window.Swiper;
 class Recommend extends Component{
@@ -11,7 +12,8 @@ class Recommend extends Component{
 		this.state = {
 			datalist :[],
 			list : ['列表'],
-			swipeList : []
+			swipeList : [],
+			animating: true
 
 		}
 	}
@@ -57,6 +59,13 @@ class Recommend extends Component{
 					)
 				})
 			}
+			{
+				this.state.animating?
+				<div className="example">
+				    <Spin  animating={this.state.animating}/>
+				</div>
+				:null
+			}
 			
 
 		</div>
@@ -75,11 +84,28 @@ class Recommend extends Component{
 		
 	}
 	componentDidMount(){
-		axios.get('/v2/page?pageId=1&tabId=1&_=1534233733281').then(res=>{
-			console.log(res.data.data.modules)
+		// axios.get('/v2/page?pageId=1&tabId=1&_=1534233733281').then(res=>{
+		// 	// console.log(res.data.data.modules)
+		// 	this.setState({
+		// 		swipeList : res.data.data.modules[0].moduleContent.banners,
+		// 		datalist : res.data.data.modules
+		// 	},function(){
+		// 		this.Swiper = new Swiper('.swiper-container', {
+		// 			slidesPerView: 'auto',
+		// 			spaceBetween: 15,
+		// 			pagination: {
+		// 			    el: '.swiper-pagination',
+		// 			    clickable: true,
+		// 			},
+		// 		});
+		// 	})
+		// })
+		Promise.all([axios.get('/v2/page?pageId=1&tabId=1&_=1534233733281')]).then(res=>{
+			// console.log(res);
 			this.setState({
-				swipeList : res.data.data.modules[0].moduleContent.banners,
-				datalist : res.data.data.modules
+				swipeList : res[0].data.data.modules[0].moduleContent.banners,
+				datalist : res[0].data.data.modules,
+				animating:false
 			},function(){
 				this.Swiper = new Swiper('.swiper-container', {
 					slidesPerView: 'auto',
@@ -89,6 +115,11 @@ class Recommend extends Component{
 					    clickable: true,
 					},
 				});
+			})
+		}).catch(err=>{
+			console.log(err);
+			this.setState({
+				animating : false
 			})
 		})
 		

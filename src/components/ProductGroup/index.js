@@ -28,7 +28,7 @@ class ProductGroup extends Component{
 	componentDidMount(){
 		console.log(this.props.match.params.id3)
 		axios.get(`/pages/productGroup/${this.props.match.params.id3}/products?pageNumber=1&_=1534319923880`).then(res=>{
-			console.log(res.data)
+			// console.log(res.data)
 			this.setState({
 				datalist : res.data.data.products,
 				url : res.data.data.products[8].productImg

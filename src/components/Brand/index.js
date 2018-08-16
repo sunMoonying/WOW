@@ -28,7 +28,7 @@ class Brand extends Component{
 	componentDidMount(){
 		console.log(this.props.match.params.id4)
 		axios.get(`/brand/${this.props.match.params.id4}/products?pageSize=10&currentPage=1&_=1534377333051`).then(res=>{
-			console.log(res.data);
+			// console.log(res.data);
 			this.setState({
 				datalist : res.data.data,
 				url : res.data.data[5].productImg
