@@ -22,7 +22,7 @@ class Activity extends Component{
 				this.state.datalist.map((item,index)=>
 					{
 						return index!== 4 && index !== 5?
-						<li key={item.moduleId} className="activity-1">	
+						<li key={item.moduleId} className="activity-1" onClick={this.handleClick.bind(this,item.id)}>	
 							{
 								item.moduleContent.banners?
 								<img src={item.moduleContent.banners[0].bannerImgSrc} alt="" className="big"/>
@@ -41,7 +41,7 @@ class Activity extends Component{
 							{							
 								item.moduleContent.products && item.moduleContent.products.map(item=>
 									
-										<div className="picture3">
+										<div className="picture3" onClick={this.handleClick.bind(this,item.id)}>
 											<img src={item.productImg} alt="" key={item.productId} className="small"/>
 											<p className="p1">{item.productName}</p>
 											<p className="p1 money">￥{item.sellPrice}</p>
@@ -57,7 +57,7 @@ class Activity extends Component{
 
 								item.moduleContent.products && item.moduleContent.products.map(item=>
 									
-										<div className="picture6">
+										<div className="picture6" onClick={this.handleClick.bind(this,item.id)}>
 											<img src={item.productImg} alt="" key={item.parentProductId} className="small"/>
 											<p className="p2">{item.productName}</p>
 											<p className="p2 money">￥{item.sellPrice}</p>
@@ -81,7 +81,7 @@ class Activity extends Component{
 
 	componentDidMount(){
 		axios.get("/v2/page?pageId=1&tabId=10010&_=1534299316517").then(res=>{
-				console.log(res.data.data.modules[4])
+				
 				this.setState({
 					datalist:res.data.data.modules
 					
@@ -89,6 +89,14 @@ class Activity extends Component{
 				
 		})
 		
+	}
+
+
+	handleClick(data){
+
+		
+
+		this.props.history.push(`/detail/${data}`);
 	}
 }
 export default Activity;
