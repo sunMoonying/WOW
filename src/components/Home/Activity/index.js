@@ -22,15 +22,15 @@ class Activity extends Component{
 				this.state.datalist.map((item,index)=>
 					{
 						return index!== 4 && index !== 5?
-						<li key={item.moduleId} className="activity-1" onClick={this.handleClick.bind(this,item.id)}>	
+						<li key={item.moduleId} className="activity-1">	
 							{
 								item.moduleContent.banners?
-								<img src={item.moduleContent.banners[0].bannerImgSrc} alt="" className="big"/>
+								<img src={item.moduleContent.banners[0].bannerImgSrc} alt="" className="big" onClick = {this.callback.bind(this,item.moduleContent.banners[0].bannerLinkTargetId)}/>
 								:null
 							}
 							{
 								item.moduleContent.bannerImgSrc?
-								<img src={item.moduleContent.bannerImgSrc} alt="" className="big"/>
+								<img src={item.moduleContent.bannerImgSrc} alt="" className="big" onClick = {this.callback1.bind(this,'666')}/>
 								:null
 							}
 
@@ -41,8 +41,8 @@ class Activity extends Component{
 							{							
 								item.moduleContent.products && item.moduleContent.products.map(item=>
 									
-										<div className="picture3" onClick={this.handleClick.bind(this,item.id)}>
-											<img src={item.productImg} alt="" key={item.productId} className="small"/>
+										<div className="picture3">
+											<img src={item.productImg} alt="" key={item.productId} className="small"  onClick = {this.backdetail.bind(this,item.productId)}/>
 											<p className="p1">{item.productName}</p>
 											<p className="p1 money">￥{item.sellPrice}</p>
 										</div>	
@@ -57,8 +57,9 @@ class Activity extends Component{
 
 								item.moduleContent.products && item.moduleContent.products.map(item=>
 									
-										<div className="picture6" onClick={this.handleClick.bind(this,item.id)}>
-											<img src={item.productImg} alt="" key={item.parentProductId} className="small"/>
+
+										<div className="picture6">
+											<img src={item.productImg} alt="" key={item.parentProductId} className="small"  onClick = {this.backdetail.bind(this,item.productId)}/>
 											<p className="p2">{item.productName}</p>
 											<p className="p2 money">￥{item.sellPrice}</p>
 										</div>	
@@ -92,11 +93,15 @@ class Activity extends Component{
 	}
 
 
-	handleClick(data){
 
-		
-
-		this.props.history.push(`/detail/${data}`);
+	callback(data){
+		this.props.history.push(`/topic/${data}`)
+	}
+	callback1(data){
+		this.props.history.push(`/topic/${data}`)
+	}
+	backdetail(data){
+		this.props.history.push(`/detail/${data}`)
 	}
 }
 export default Activity;

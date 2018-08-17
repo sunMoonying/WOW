@@ -44,7 +44,7 @@ class Recommend extends Component{
 							{
 								item.moduleContent.products && item.moduleContent.products.map(item=>	
 									<div className="swiper-slide" key = {item.productId}>
-										<img src={item.productImg}  className="recoment_img"/>	
+										<img src={item.productImg}  className="recoment_img" onClick = {this.backdetail.bind(this,item.productId)}/>	
 										<p className = "p_recommend">{item.productTitle}</p>
 										<h4 className = "h4_recommend">￥{item.sellPrice}</h4>
 									</div>
@@ -82,6 +82,9 @@ class Recommend extends Component{
 		}
 		console.log(day)
 		
+	}
+	backdetail(data){
+		this.props.history.push(`/detail/${data}`)
 	}
 	componentDidMount(){
 		// axios.get('/v2/page?pageId=1&tabId=1&_=1534233733281').then(res=>{

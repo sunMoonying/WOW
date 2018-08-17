@@ -1,7 +1,7 @@
 .classify_list_all {
   position: relative;
   padding-left: 20px;
-  height: 88px;
+  height: 116px;
   padding: 16px 0;
   width: 100%;
   background: url(/images/list_background.jpg) no-repeat;
@@ -76,4 +76,5 @@
       margin-left: 0.3rem; }
 
 .list_content_ul, .list_title_ul {
-  background: #fff; }
+  background: #fff;
+  width: 100%; }

@@ -19,12 +19,13 @@ class Furniture extends Component{
 	
 	render(){
 		return <div id="furniture">
+
 		   
 	
 			{<ReactSwipe className="carousel" swipeOptions={{continuous: true,auto:2000}} key={this.state.bannerlist.length}>
 				{
 					this.state.bannerlist.map(item=>
-						<img src={item.bannerImgSrc} key={item.id} className="fur_banner"/>
+						<img src={item.bannerImgSrc} key={item.id} className="fur_banner" />
 					)
 				}			               
 			</ReactSwipe>}
@@ -44,7 +45,7 @@ class Furniture extends Component{
 							<p className="title_p1">{item.moduleDescription}</p>
 							{
 								item.moduleContent.banners?
-									<img src={item.moduleContent.banners[0].bannerImgSrc} className = "title_li1_img"/>
+									<img src={item.moduleContent.banners[0].bannerImgSrc} className = "title_li1_img" onClick = {this.callback.bind(this,item.moduleContent.banners[0].bannerLinkTargetId)}/>
 									:null
 							}
 							{
@@ -75,7 +76,7 @@ class Furniture extends Component{
 							{
 								item.moduleContent.products && item.moduleContent.products.map(item=>
 								<div className="title_div3">	
-									<img src={item.productImg} className="title_img3"/>	
+									<img src={item.productImg} className="title_img3" onClick={this.buttonClick.bind(this,item.productId)}/>	
 									<p className="title_div3_p3">{item.productName}</p>
 									<p className="title_div3_p33">￥{item.sellPrice}</p>
 								</div>
@@ -106,7 +107,7 @@ class Furniture extends Component{
 
 			</ul>
 	
-		 <img src="myimage/backTop.png" className="title_topback" />
+			<img src="myimage/backTop.png" className="title_topback" />
 
 		</div>
 	}
@@ -116,10 +117,9 @@ class Furniture extends Component{
 		console.log(111111);
 		this.props.history.push(`/detail/${data}`)
 	}
-	// bigimageclick(data){
-	// 	this.props.history.push(`/brand/${data}`)
-	// }
-
+	callback(data){
+		this.props.history.push(`/brand/${data}`)
+	}
 	componentDidMount(){
  	axios.get("/v2/page?pageId=1&tabId=10005&_=1534240589230").then(res=>{
 			console.log(res.data)
@@ -133,15 +133,13 @@ class Furniture extends Component{
 					spaceBetween: 15,
 					pagination: {
 					    el: '.swiper-pagination',
-					    clickable: true,
-					},
+					    clickable: true
+					}
 				});
 			})
-		}).catch(error=>{
+		}).catch(error=>{})
 
-		})
-
-}
+	}
 
 }
 

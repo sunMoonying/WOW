@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import axios from 'axios'
 import "./index.css";
 import Navbar from '../Navbar'
-
+import {connect} from 'react-redux'
 class Shopping extends Component{
 
 	constructor(props){
@@ -57,7 +57,7 @@ class Shopping extends Component{
 			this.setState({
 				datalist : res.data.data
 			})
-			
+			this.props.changetitle('购物车')
 		})
 	}
 
@@ -73,4 +73,14 @@ class Shopping extends Component{
 }
 
 
-export default Shopping;
+export default connect(
+	null,
+	{
+		changetitle(data){
+			return{
+				type : 'mytitle',
+				payload : data
+			}
+		}
+	}
+)(Shopping);
