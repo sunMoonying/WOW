@@ -49,7 +49,7 @@ class Home_furnishing extends Component{
 							{
 								item.moduleContent.products && item.moduleContent.products.map(item=>
 								<div className="title_div3">	
-									<img src={item.productImg} className="title_img3"/>	
+									<img src={item.productImg} className="title_img3"  onClick = {this.backdetail.bind(this,item.productId)}/>	
 									<p className="title_div3_p3">{item.productName}</p>
 									<p className="title_div3_p33">￥{item.sellPrice}</p>
 								</div>
@@ -66,7 +66,7 @@ class Home_furnishing extends Component{
 							
 							{
 								item.moduleContent.banners && item.moduleContent.banners.map(item=>
-									<img src={item.bannerImgSrc} key={item.id} className="title_img2"/>
+									<img src={item.bannerImgSrc} key={item.id} className="title_img2" onClick = {this.bandclick.bind(this,item.bannerLinkTargetId)}/>
 								)
 							}	
 						
@@ -93,6 +93,12 @@ class Home_furnishing extends Component{
 			})
 		})
 
+	}
+	backdetail(data){
+		this.props.history.push(`/detail/${data}`)
+	}
+	bandclick(data){
+		this.props.history.push(`/list/${data}`)
 	}
 }
 export default Home_furnishing;

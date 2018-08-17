@@ -58,7 +58,7 @@ class Activity extends Component{
 								item.moduleContent.products && item.moduleContent.products.map(item=>
 									
 										<div className="picture6">
-											<img src={item.productImg} alt="" key={item.parentProductId} className="small"/>
+											<img src={item.productImg} alt="" key={item.parentProductId} className="small"  onClick = {this.backdetail.bind(this,item.productId)}/>
 											<p className="p2">{item.productName}</p>
 											<p className="p2 money">￥{item.sellPrice}</p>
 										</div>	
@@ -95,6 +95,9 @@ class Activity extends Component{
 	}
 	callback1(data){
 		this.props.history.push(`/topic/${data}`)
+	}
+	backdetail(data){
+		this.props.history.push(`/detail/${data}`)
 	}
 }
 export default Activity;
