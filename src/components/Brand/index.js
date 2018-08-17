@@ -31,7 +31,7 @@ class Brand extends Component{
 			// console.log(res.data);
 			this.setState({
 				datalist : res.data.data,
-				url : res.data.data[5].productImg
+				url : res.data.data[3].productImg
 			})
 		})
 	}

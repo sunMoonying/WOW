@@ -21,9 +21,12 @@ import Detail from '../components/Detail'
 import ProductGroup from '../components/ProductGroup'
 import Topic from '../components/Topic'
 import Brand from '../components/Brand'
+import {Provider} from 'react-redux';
+import store from '../Redux'
 
 const router = (
 	<Router>
+	<Provider store = {store}>
 		<App>
 			<Switch>
 				<Route path = "/home" render = {({history})=>
@@ -50,6 +53,7 @@ const router = (
 				<Redirect from = "*" to = "/home"/>
 			</Switch>
 		</App>
+	</Provider>
 	</Router>
 ) 
 

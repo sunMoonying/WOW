@@ -25,12 +25,12 @@ class Activity extends Component{
 						<li key={item.moduleId} className="activity-1">	
 							{
 								item.moduleContent.banners?
-								<img src={item.moduleContent.banners[0].bannerImgSrc} alt="" className="big"/>
+								<img src={item.moduleContent.banners[0].bannerImgSrc} alt="" className="big" onClick = {this.callback.bind(this,item.moduleContent.banners[0].bannerLinkTargetId)}/>
 								:null
 							}
 							{
 								item.moduleContent.bannerImgSrc?
-								<img src={item.moduleContent.bannerImgSrc} alt="" className="big"/>
+								<img src={item.moduleContent.bannerImgSrc} alt="" className="big" onClick = {this.callback1.bind(this,'666')}/>
 								:null
 							}
 
@@ -89,6 +89,12 @@ class Activity extends Component{
 				
 		})
 		
+	}
+	callback(data){
+		this.props.history.push(`/topic/${data}`)
+	}
+	callback1(data){
+		this.props.history.push(`/topic/${data}`)
 	}
 }
 export default Activity;
