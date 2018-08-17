@@ -19,12 +19,13 @@ class Furniture extends Component{
 	
 	render(){
 		return <div id="furniture">
+
 		   
 	
 			{<ReactSwipe className="carousel" swipeOptions={{continuous: true,auto:2000}} key={this.state.bannerlist.length}>
 				{
 					this.state.bannerlist.map(item=>
-						<img src={item.bannerImgSrc} key={item.id} className="fur_banner"/>
+						<img src={item.bannerImgSrc} key={item.id} className="fur_banner" />
 					)
 				}			               
 			</ReactSwipe>}
@@ -106,7 +107,7 @@ class Furniture extends Component{
 
 			</ul>
 	
-		 <img src="myimage/backTop.png" className="title_topback" />
+			<img src="myimage/backTop.png" className="title_topback" />
 
 		</div>
 	}

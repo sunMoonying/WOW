@@ -2,7 +2,12 @@
 .r_news{float: right;}
 .news_div{
 	background:#fff;
-	height:100%
+	height:100%;
+	width:100%;
+	padding-left:0px;
+	padding-right:0px;
+
+
 }
 	.news_div .news_p1{
 		width:100%;
@@ -24,7 +29,7 @@
 
 	}
 	.news_div .news_p3{
-		width:100%;
+		width:80%;
 		height:50px;
 		line-height: 50px;
 		margin-left: 15%;
@@ -50,7 +55,7 @@
 		
 	}
 	.news_div .news_p6{
-		width:100%;
+		width:80%;
 		height:50px;
 		line-height: 50px;
 		margin-left: 15%;
@@ -73,3 +78,6 @@
 		margin-left: 3%;
 
 	}	
+	.r_news{
+		margin-right:20px;
+	}
