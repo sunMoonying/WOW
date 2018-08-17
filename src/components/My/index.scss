@@ -1,5 +1,10 @@
 .l_my{float: left}
 .r_my{float: right;}
+.all_my{
+	font-size:17px;
+	margin-bottom:60px;
+
+}
 .head_my{
 
 	background: #fff;
@@ -19,12 +24,23 @@
 	height: 100px;
 	line-height: 100px;
 	margin-bottom: 10px;
+	font-size:20px;
+	color:#000;
 }
-.username_my .class1_my{
+// .username_my .class1_my{
 
+	
+// 	width:50px;
+// 	height:50px;
+// }
+.username_my .my_name{
+
+	width:60px;
+	height:60px;
 	margin-left: 15px;
+	margin-top: 20px;
+	margin-right: 15px;
 }
-
 
 .operate_my{
 	 margin-bottom: 10px;
@@ -38,14 +54,35 @@
     text-align:left;
     border-bottom: 1px solid #EAEAEA;
     background: #fff;
+    font-size:15px;
    
 }
 
+.operate_my .li1_my1{   
+ 	width: 100%;
+    height: 60px;
+    line-height: 60px;
+    /* /font-size: 14px; */
+    background: #fff;
+    text-align:left;
+    border-bottom: 1px solid #EAEAEA;
+    
+    padding-left:16px;
+   
+}
+
+
 .operate_my .li1_my .l_my{
 	margin-right: 10px;
+
+}
+.r_my{
+	margin-right: 16px;
+
 }
 .myself_my{
 	 margin-bottom: 10px;
+
 }
 .myself_my .li2_my{
 	width: 100%;
@@ -55,10 +92,10 @@
     color: #000;
     border-bottom: 1px solid #EAEAEA;
     background: #fff;
+    padding-left:16px;
 }
 .myself_my .li2_my .span1_my{
-	display: block;
-
+	margin-right:0px;
 }
 .quit_my{
 	color: red;
@@ -68,4 +105,10 @@
     /* /font-size: 14px; */
     background: #fff;
     text-align:center;
+}
+.my_tb{
+	width:30px;
+	height:30px;
+	margin-left: 15px;
+	margin-top: 16px;
 }
