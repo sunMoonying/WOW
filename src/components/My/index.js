@@ -2,21 +2,21 @@ import React,{Component} from 'react';
 import './index.css'
 class My extends Component{
 	render(){
-		return <div>
+		return <div className="all_my">
 			<div className="head_my">我</div>
 
 			<div className="username_my">
-				<img src="myimage/default_portrait.png" className="l_my" />
+				<img src="myimage/default_portrait.png" className="l_my my_name" />
 				<span className="class1_my">wow_14856359</span>
 				<i className="iconfont icon-more r_my"></i>
 			</div>
 			<ul className="operate_my">
-				<li className="li1_my">全部订单</li>
-				<li className="li1_my"><img src="myimage/waite-pay.png" className="l_my" /><div className="ol_my">待付款<i className="iconfont icon-more r_my"></i></div></li>
-				<li className="li1_my"><img src="myimage/waite-delivery.png" className="l_my" /><div className="ol_my">待发货<i className="iconfont icon-more r_my"></i></div></li>
-				<li className="li1_my"><img src="myimage/waite-goods.png" className="l_my" /><div className="ol_my">待收货<i className="iconfont icon-more r_my"></i></div></li>
-				<li className="li1_my"><img src="myimage/finished.png" className="l_my" /><div className="ol_my">待评论<i className="iconfont icon-more r_my"></i></div></li>
-				<li className="li1_my"><img src="myimage/returns.png" className="l_my" /><div className="ol_my">退换货<i className="iconfont icon-more r_my"></i></div></li>
+				<li className="li1_my1">全部订单</li>
+				<li className="li1_my"><img src="myimage/waite-pay.png" className="l_my my_tb" /><div className="ol_my">待付款<i className="iconfont icon-more r_my"></i></div></li>
+				<li className="li1_my"><img src="myimage/waite-delivery.png" className="l_my my_tb" /><div className="ol_my">待发货<i className="iconfont icon-more r_my"></i></div></li>
+				<li className="li1_my"><img src="myimage/waite-goods.png" className="l_my my_tb" /><div className="ol_my">待收货<i className="iconfont icon-more r_my"></i></div></li>
+				<li className="li1_my"><img src="myimage/finished.png" className="l_my my_tb" /><div className="ol_my">待评论<i className="iconfont icon-more r_my"></i></div></li>
+				<li className="li1_my"><img src="myimage/returns.png" className="l_my my_tb" /><div className="ol_my">退换货<i className="iconfont icon-more r_my"></i></div></li>
 			</ul>
 			<ul className="myself_my">
 				<li className="li2_my">我的收藏<i className="iconfont icon-more r_my"></i></li>
