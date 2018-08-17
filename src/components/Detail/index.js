@@ -1,8 +1,10 @@
 import React,{Component} from 'react';
 import "./index.css";
 import axios from "axios";
-import ReactSwipe from "react-swipe";
+import { Carousel } from 'antd';
 
+
+let Swiper = window.Swiper;
 class Detail extends Component{
 	constructor(){
 		super();
@@ -16,17 +18,23 @@ class Detail extends Component{
 	render(){
 		const reg =/(http|ftp|https):\/\/([\w.]+\/?)\S*/g;
 		return <div id="detail">
-			<ReactSwipe className="carousel" swipeOptions={{continuous: true,auto:2000}}>
-				
-                {
-                	this.state.juti_message.map(item=>
-                		<div>
-                			<img src={item.content} className="juti_img"/>
-                		</div>
-                	)
-                }
+					  <Carousel autoplay>
 
-			</ReactSwipe>
+					    {
+                			this.state.juti_message.map(item=>{
+                				return reg.test(item.content) ? 
+                				<div className="slide_div">
+                					<img src={item.content} className="slide_img"/>
+                				</div>
+                				: null
+                			})
+                		}
+                		
+					  </Carousel>
+				    
+				    
+                
+
 
 
 			<div className="juti">
