@@ -1,6 +1,6 @@
 #detail {
   background: #fff;
-  margin-bottom: 100px; }
+  margin-bottom: 200px; }
 
 .juti_li {
   list-style: none; }
@@ -55,3 +55,12 @@
       width: 100%; }
     .like_product .like_product_li .like_product_price {
       color: #000; }
+
+.slide_img {
+  width: 100% !important;
+  height: 331px;
+  float: left; }
+
+.slide_div {
+  width: 100% !important;
+  height: 331px !important; }
